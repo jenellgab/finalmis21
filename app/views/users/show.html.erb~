@@ -5,7 +5,7 @@
   <% for friendship in @user.friendships %>
     <li>
       <%=h friendship.friend.email %>
-	(<%= link_to "View high scores", show_posts_path(friendship.friend.id) %>)
+	(<%= link_to "View high scores", posts_path_(friendship.friend.id) %>)
       (<%= link_to "remove", friendship, :method => :delete %>)
     </li>
   <% end %>

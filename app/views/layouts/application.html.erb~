@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+	<br />
+	<br />
+	<center>
+  <img src = "http://i254.photobucket.com/albums/hh103/bacon0127/spiellogo_zps5db8706b.jpg" alt="Banner Image" style = "width:80%; height:80%;" /></img>
+	</center>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -37,6 +42,8 @@
     <%= javascript_include_tag "application" %>
   </head>
   <body>
+	<br />
+	<br />
 
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -59,29 +66,38 @@
 <% end %>
             <ul class="nav">
 	<li class="active"><a href="/ideas">Ideas</a></li>
-              <li><%= link_to "Home", "/path1"  %></li>
-              <li><%= link_to "My Posts", "/path2"  %></li>
-              <li><%= link_to "Chenes", "/path3"  %></li>
+              <li><%= link_to "Home", "/feed"  %></li>
+              <li><%= link_to "My Posts", "/posts"  %></li>
+              <li><%= link_to "Search", "/users/show"  %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" padding ="absolute" >
         <div class="row">
           <div class="span9">
             <%= bootstrap_flash %>
             <%= yield %>
           </div>
+	
           <div class="span3">
+		
             <div class="well sidebar-nav">
-              <h3>Sidebar</h3>
+              <h3>GAMES</h3>
               <ul class="nav nav-list">
-                <li class="nav-header">Sidebar</li>
-                <li><%= link_to "Link1", "/path1"  %></li>
-                <li><%= link_to "Link2", "/path2"  %></li>
-                <li><%= link_to "Link3", "/path3"  %></li>
+                <li class="nav-header">Click to view</li>
+                <li><%= link_to "2048", "/twenty"  %></li>
+                <li><%= link_to "Candy Crush", "/candy"  %></li>
+                <li><%= link_to "2Fuse", "/fuse"  %></li>
+		<li><%= link_to "Iron Pants", "/iron"  %></li>
+		<li><%= link_to "Flappy Bird", "/flappy"  %></li>
+		<li><%= link_to "Piano Tiles", "/path3"  %></li>
+		<li><%= link_to "Temple Run", "/temple"  %></li>
+		<li><%= link_to "Fruit Ninja", "/fruit"  %></li>
+		<li><%= link_to "Minion Rush", "/minion"  %></li>
+		<li><%= link_to "Giant Boulder of Death", "/gbd"  %></li>
               </ul>
             </div><!--/.well -->
           </div><!--/span-->

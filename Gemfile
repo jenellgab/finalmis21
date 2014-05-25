@@ -40,5 +40,5 @@ gem 'spring',        group: :development
 
 gem 'devise'
 gem 'twitter-bootstrap-rails'
-gem "paperclip", "~> 4.1"
+gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'simple_form'

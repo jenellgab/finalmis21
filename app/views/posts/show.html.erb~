@@ -2,20 +2,17 @@
 <% @posts.each do |post| %>
 	<div class="well">
 
-		<p><%= post.candy_crush %></p>
-		<p><%= post.flappy_bird %></p>
-		<p><%= post.piano_tiles %></p>
-		<p><%= post.gbd %></p>
-		<p><%= post.twenty %></p>
-		<p><%= post.fruit_ninja %></p>
-		<p><%= post.minion_rush %></p>
-		<p><%= post.fuse %></p>
-		<p><%= post.iron_pants %></p>
-		<p><%= post.temple_run %></p>
+		<h3><%= post.candy_crush %></h3>
+		<h3><%= post.flappy_bird %></h3>
+		<h3><%= post.piano_tiles %></h3>
+		<h3><%= post.gbd %></h3>
+		<h3><%= post.twenty %></h3>
+		<h3><%= post.fruit_ninja %></h3>
+		<h3><%= post.minion_rush %></h3>
+		<h3><%= post.fuse %></h3>
+		<h3><%= post.iron_pants %></h3>
+		<h3><%= post.temple_run %></h3>	
 		<p><%= post.message %></p>
-		<p><%= post.published_at %></p>
-		<%= image_tag post.avatar.url %>
-		<%= image_tag post.avatar.url(:avatar) %>
 	</div>
 <% end %>
 

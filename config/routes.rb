@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 	resources :users
 	resources :friendships
 	resources :posts
-	root 'users#show' 
+	root 'users#new' 
 
 get '/candy' => 'pages#candy'
 get '/minion' => 'pages#minion'

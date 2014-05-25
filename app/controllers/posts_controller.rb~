@@ -15,7 +15,6 @@ class PostsController < ApplicationController
 	end
   	def create
 		@posts = Post.create( avatar_params )
- 		@posts.images.build
              	@posts.user = current_user
 		@score = params[:type]
 		@posts.message = params[:post][:message]
@@ -55,7 +54,7 @@ class PostsController < ApplicationController
   	end
 	
 	def avatar_params
-  		params.require(:post).permit(:avatar)
+  		params.require(:post).permit(:photo)
 	end
 	
 

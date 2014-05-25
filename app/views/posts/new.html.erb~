@@ -2,10 +2,14 @@
 <%= form_for :posts, :url => posts_path, :html => { :multipart => true } do |form| %>
   <%= form.file_field :avatar %>
 <% end %>
-<%= simple_form_for @post do |f| %>
+<%= simple_form_for @posts do |f| %>
 	<%= f.input :score, as: :text %>
+	<br />
 	<%= f.input :message, as: :text %>
+	<br />
 	<%= f.input :type,  as: :select,
     collection: ["2048", "2 Fuse", "Candy Crush", "Flappy Bird", "Fruit Ninja", "Giant Boulder of Death", "Iron Pants", "Piano Tiles", "Minion Rush", "Temple Run" ] %>
+	<br />
 	<%= f.submit %>
+
 <% end %>
