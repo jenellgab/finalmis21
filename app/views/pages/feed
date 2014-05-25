@@ -1,12 +1,9 @@
-
-
 <h2>Friends</h2>
 <ul>
   <% for friendship in @user.friendships %>
+	<div class="well">
     <li>
-      <%=h friendship.friend.email %>
-	(<%= link_to "View high scores", posts_path(friendship.friend.id) %>)
-      (<%= link_to "remove", friendship, :method => :delete %>)
+      <%=h friendship.friend.posts %>
     </li>
   <% end %>
 </ul>

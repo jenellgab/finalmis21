@@ -10,12 +10,13 @@ one:
   iron_pants: 1
   minion_rush: 1
   piano_tiles: 1
-  published_at: 2014-05-24
+  published_at: 2014-05-25 16:28:14
   temple_run: 1
   twenty: 1
   score: 1
   type: 
   message: MyString
+  user_id: 1
 
 two:
   avatar: 
@@ -27,9 +28,10 @@ two:
   iron_pants: 1
   minion_rush: 1
   piano_tiles: 1
-  published_at: 2014-05-24
+  published_at: 2014-05-25 16:28:14
   temple_run: 1
   twenty: 1
   score: 1
   type: 
   message: MyString
+  user_id: 1

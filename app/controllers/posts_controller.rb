@@ -2,7 +2,7 @@ class PostsController < ApplicationController
 	before_action :authenticate_user!
   
 	def index
-		@posts = current_user.posts
+	@posts = current_user.posts.order(id: :desc)
   	end
 
   	def new
@@ -10,10 +10,12 @@ class PostsController < ApplicationController
   	end
 
 	def show
-		@posts = Post.all
+		@user = User.find(params[:id])
+		@posts = @user.posts.order(id: :desc)
 	end
   	def create
 		@posts = Post.create( avatar_params )
+             	@posts.user = current_user
 		@score = params[:type]
 		@posts.message = params[:post][:message]
 		if @score = "Candy Crush"
@@ -47,10 +49,13 @@ class PostsController < ApplicationController
 			@posts.twenty = params[:post][:score]
 		end
 		@posts.save!
+		@posts.published_at = DateTime.now
 		redirect_to :posts => :index
   	end
 	
 	def avatar_params
   		params.require(:post).permit(:avatar)
 	end
+	
+
 end

@@ -12,7 +12,8 @@
 		<tr>
 			<td><%= user.id %></td>
 			<td><%= link_to user.username, user %></td>
-			<%= link_to "Add Friend", friendships_path(:friend_id => user), :method => :post %>
+			<td><%= link_to "Add Friend", friendships_path(:friend_id => user), :method => :post %></td>
+
 %></td>
 		</tr>
 		<% end %>

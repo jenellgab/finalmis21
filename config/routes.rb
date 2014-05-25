@@ -2,9 +2,20 @@ Rails.application.routes.draw do
   devise_for :users
 	resources :users
 	resources :friendships
-	resource :posts
+	resources :posts
 	root 'users#show' 
 
+get '/candy' => 'pages#candy'
+get '/minion' => 'pages#minion'
+get '/gbd' => 'pages#gbd'
+get '/twenty' => 'pages#twenty'
+get '/fuse' => 'pages#fuse'
+get '/fruit' => 'pages#fruit'
+get '/iron' => 'pages#iron'
+get '/flappy' => 'pages#flappy'
+get '/piano' => 'pages#piano'
+get '/temple' => 'pages#temple'
+get '/feed' => 'pages#feed'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
