@@ -54,7 +54,7 @@ class PostsController < ApplicationController
   	end
 	
 	def avatar_params
-  		params.require(:post).permit(:photo)
+  		params.require(:post).permit(:avatar)
 	end
 	
 

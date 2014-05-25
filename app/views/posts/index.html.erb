@@ -1,3 +1,4 @@
+<html>
 <h1>My Scores</h1>
 <% @posts.each do |post| %>
 	<div class="well">
@@ -13,8 +14,9 @@
 		<h3><%= post.iron_pants %></h3>
 		<h3><%= post.temple_run %></h3>	
 		<p><%= post.message %></p>
-		<%= image_tag post.avatar.url(:original) %>
+		<% if post.photo == "" %> <div class = "well"><%= image_tag("index.jpeg", :alt => "noposter") %></div> <% else %> <div class = "well"><img style="height:auto; width:auto; max-width:260px; max-height:300px;"src = "<%= post.photo %>" /></div> <% end %>
 	</div>
 <% end %>
 <%= link_to 'Post Score', new_post_path %>
+</html>
 

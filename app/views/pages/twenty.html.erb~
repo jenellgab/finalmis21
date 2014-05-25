@@ -1,8 +1,9 @@
-<h1></h1>
+<h1>2048 Top 5</h1>
 <% @posts.each do |post| %>
+	
 	<div class="well">
-
-		<p><%= post.twenty %></p>
 		
+		<p><%= post.twenty %></p>
+		<center><img src ="https://lh4.ggpht.com/tnPMNQZ4vyFjflXlb-VaggJ0mw4ncnrYzgOgi2nVPuQEPmANDqH_uGPWc5KqfW77kQ=w300"></img></center>
 	</div>
 <% end %>

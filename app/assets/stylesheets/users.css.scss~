@@ -18,6 +18,6 @@ td {
   color: #f79413;
 }
 
-f.label {
-  color: #f79413;
+f {
+  color: #ffffff;
 }

@@ -17,6 +17,7 @@ class PostsController < ApplicationController
 		@posts = Post.create( avatar_params )
              	@posts.user = current_user
 		@score = params[:type]
+		@photo = params[:post][:photo]
 		@posts.message = params[:post][:message]
 		if @score = "Candy Crush"
 			@posts.candy_crush = params[:post][:score]

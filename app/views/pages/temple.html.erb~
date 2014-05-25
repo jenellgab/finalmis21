@@ -1,5 +1,4 @@
 <h1>Temple Run Top 5</h1>
-<center><img src ="http://aweebitirish.com/wp-content/uploads/2014/03/temple-run-app-icon.jpg"></img></center>
 <% @posts.each do |post| %>
 	<div class="well">
 

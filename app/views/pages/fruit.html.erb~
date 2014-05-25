@@ -1,5 +1,5 @@
 <h1>Fruit Ninja Top 5</h1>
-<center><img src="http://www.todayfreeapps.com/wp-content/uploads/2013/04/Fruit_Ninja_icon.png"></img></center>
+<center><img src="http://appsreviewer.files.wordpress.com/2010/10/fruit-ninja.png"></img></center>
 <% @posts.each do |post| %>
 	<div class="well">
 
